@@ -1,0 +1,64 @@
+a.home-btn {
+		display: block; /* Change anchor to block element */
+		width: 100px; height: 90px; /* Specify width and height of the image. Height is value of each individual button graphic */
+		background-position: top; /* Set the position to the top */
+		background-repeat:no-repeat;
+		background-size:85px 85px;
+	 	text-indent: -9999px; /* Send the rendered HTML wording off screen */
+}
+	
+a.comp-btn {
+	background-image: url(../img/image_comp_unsel.png); 
+}	
+a.comp-btn:hover, a.a.comp-btn:focus a.a.comp-btn:active  {
+	background-image: url(../img/image_comp_sel.png);
+}
+
+a.send-btn {
+	background-image: url(../img/image_send_unsel.png); 
+}
+	
+a.send-btn:hover, a.a.send-btn:focus a.a.send-btn:active  {
+	background-image: url(../img/image_send_sel.png);
+}
+
+a.ref-btn {
+	background-image: url(../img/image_ref_unsel.png); 
+}
+	
+a.ref-btn:hover, a.a.ref-btn:focus a.a.ref-btn:active  {
+	background-image: url(../img/image_ref_sel.png);
+}
+
+a.sav-btn {
+	background-image: url(../img/image_sav_unsel.png); 
+}
+	
+a.sav-btn:hover, a.a.sav-btn:focus a.a.sav-btn:active  {
+	background-image: url(../img/image_sav_sel.png);
+}
+
+a.set-btn {
+	background-image: url(../img/image_set_unsel.png); 
+}
+	
+a.set-btn:hover, a.a.set-btn:focus a.a.set-btn:active  {
+	background-image: url(../img/image_set_sel.png);
+}
+
+a.hel-btn {
+	background-image: url(../img/image_hel_unsel.png); 
+}
+	
+a.hel-btn:hover, a.a.hel-btn:focus a.a.hel-btn:active  {
+	background-image: url(../img/image_hel_sel.png);
+}
+
+a.exit-btn {
+	background-image: url(../img/image_exit_unsel.png); 
+}
+	
+a.exit-btn:hover, a.a.exit-btn:focus a.a.exit-btn:active  {
+	background-image: url(../img/image_exit_sel.png);
+}
+

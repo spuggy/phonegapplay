@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Swift Capture</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/swiftclient.css" />
+	
+	
+	<script src="jquery-1.7.1.min.js"></script>
+	<script src="jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="swiftclient.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	// If you want to prevent dragging, uncomment this section
+	/*
+	function preventBehavior(e) 
+	{ 
+      e.preventDefault(); 
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+	*/
+	
+	function handleOpenURL(url)	{
+		// TODO: do something with the url passed in.
+	}
+	
+	function onBodyLoad(){		
+		document.addEventListener("deviceready", onDeviceReady, false);
+	}
+	
+
+	function onDeviceReady(){
+		// do your thing!
+		$.mobile.defaultPageTransition = 'none';
+	}
+    
+    </script>
+	
+	
+	
+	
+</head> 
+<body> 
+<div data-role="page">
+	<div data-role="header">
+		<h1>Swift Capture</h1>
+	</div><!-- /header -->
+	<div class="ui-grid-b"> 
+				<div class="ui-block-a"><a href="#surveys" data-transition="slide" class="home-btn comp-btn">Compose</a></div> 
+				<div class="ui-block-b"><a href="#" class="home-btn send-btn">Send</a></div>	 
+				<div class="ui-block-b"><a href="#" class="home-btn ref-btn">Refresh</a></div>
+				<div class="ui-block-a"><a href="#" class="home-btn sav-btn">Saved</a></div>
+				<div class="ui-block-b"><a href="#" class="home-btn set-btn">Settings</a></div>
+				<div class="ui-block-b"><a href="#" class="home-btn hel-btn">Help</a></div>
+				<div class="ui-block-a"><a href="#" class="home-btn exit-btn">Logout</a></div> 
+	</div><!-- /grid-c -->
+	
+</div>
+<div data-role="page" id="surveys">
+
+	<div data-role="header">
+		<h1>Surveys</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#radio" data-transition="slide">Krispy Kreme Survey	17/05/2012</a></li>		
+			<li><a href="index.html">11190: Nikon Independents 2012 Survey</a></li>	
+			<li><a href="index.html">Danone Tesco Range Change 5th to 9th March Job 11270</a></li>	
+			<li><a href="index.html">Danone Tesco Dairy Promo Checks 16th to 18th May Only</a></li>	
+			<li><a href="index.html">Danone Dairies Oykos Yogurts 14th to 17th May Job 11291</a></li>	
+		 </ul>
+	</div><!-- /content -->
+
+	
+
+</div><!-- /page -->
+<div data-role="page" id="radio">
+
+	<div data-role="header">
+		<a href="index.html" data-icon="back">Back</a>
+		<h1>Question 1</h1>
+		<a href="#text" data-transition="slide" data-icon="next">Next</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		
+		<p>This is a question dude</p>
+			
+		<fieldset data-role="controlgroup">
+			<legend>Choose a pet:</legend>
+		     	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+		     	<label for="radio-choice-1">Cat</label>
+
+		     	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+		     	<label for="radio-choice-2">Dog</label>
+
+		     	<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+		     	<label for="radio-choice-3">Hamster</label>
+
+		     	<input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4"  />
+		     	<label for="radio-choice-4">Lizard</label>
+		</fieldset>
+		
+	</div><!-- /content -->
+	
+
+</div><!-- /page -->
+
+<div data-role="page" id="text">
+
+	<div data-role="header">
+		<a href="index.html" data-icon="back">Back</a>
+		<h1>Question 1</h1>
+		<a href="#pic" data-icon="next">Next</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		
+		<p>This is a text area question dude question dude</p>
+			
+		<label for="textarea-a">Textarea:</label>
+		<textarea name="textarea" id="textarea-a">
+		I'm a basic textarea. If this is pre-populated with content, the height will be automatically adjusted to fit without needing to scroll. That is a pretty handy usability feature.
+		</textarea>
+		
+		
+	</div><!-- /content -->
+
+	
+
+</div><!-- /page -->
+
+<div data-role="page" id="pic">
+
+	<div data-role="header">
+		<a href="index.html" data-icon="back">Back</a>
+		<h1>Question 1</h1>
+		<a href="index.html" data-icon="next">Next</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		
+		<p>This is a text area question dude question dude</p>
+			
+		<p><img style="display:none;width:60px;height:60px;" id="smallImage" src="" /></p>
+			
+		<a href="#" data-role="button" onclick="capturePhoto()">Button</a>
+		
+		
+	</div><!-- /content -->
+
+	
+
+</div><!-- /page -->
+
+
+
+
+
+</body>
+</html>
